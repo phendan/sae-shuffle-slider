@@ -11,7 +11,7 @@ export const fileTypes = {
     '.ico': 'image/x-icon',
     '.mp4': 'video/mp4',
     '.mkv': 'video/x-matroska',
-    '.mov': 'video/quicktime',
+    '.mov': 'video/mp4', // Ensures compatibility
     '.avi': 'video/x-msvideo',
     '.wmv': 'video/x-ms-wmv',
     '.flv': 'video/x-flv',
@@ -25,4 +25,4 @@ export type FileTypes = typeof fileTypes;
 
 export type FileExtension = keyof FileTypes;
 
-export type Asset = { path: string; mimeType: string };
+export type Asset = { path: string, mimeType: string };

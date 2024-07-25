@@ -1,11 +1,11 @@
 'use client';
 
-import AssetLoader from '@/components/AssetLoader';
+import ShuffleSlider from '@/components/pages/ShuffleSlider';
 
 export default function Home() {
     return (
-        <main className="w-screen h-screen">
-            <AssetLoader />
+        <main className="h-screen relative overflow-hidden">
+            <ShuffleSlider />
         </main>
     );
 }
